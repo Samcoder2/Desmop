@@ -1,0 +1,483 @@
+*{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+img{
+    width: 170px;
+    position: fixed;
+    bottom: 3px;
+    right: 1.0%;
+    z-index: 10000;
+}
+
+#home-el{
+    color: white;
+    min-height: 100vh;
+    background: Linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url("./background.jpg");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position: 102px 0px;
+    width: 100%;
+}
+
+#services-el{
+    transition: .5s;
+    margin-top: 0px;
+    width: 100%;
+    min-height: 150vh;
+   
+}
+
+
+h3{
+    position: fixed;
+    left: 5%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.8rem;
+ 
+}
+
+span{
+    background: #ff4069;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+}
+
+/* menu checkbox display */
+#menu-el{   
+   display: none;
+}
+/* Menu text display */
+header label{
+    display: none;    
+}
+
+
+
+/* styling the header */
+header{
+   
+    top: 0px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    transition: 0.5s;
+}
+
+header ul{
+    list-style-type: none;
+    position: absolute;
+    top: 16%;
+    align-items: center;
+}
+
+/* Styling the list items */
+header ul li{
+    display: inline-block;
+    padding: 9px 20px;
+    transition: .3s ease;
+}
+nav{
+    padding-right: 50%;    
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    transition: 0.5s ease;
+}
+/* imported font */
+@font-face{
+    font-family: myFirstFont;
+    src: url(Delicious-Bold.otf);
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: mySecondFont;
+    src: url(LeelaUIB.ttf);
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: myThirdFont;
+    src: url(segoeuib.ttf);
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: myFourthFont;
+    src: url(Lobster_1.otf);
+    font-weight: bolder;
+}
+
+@font-face{
+    font-family: myFifthFont;
+    src: url(Diavlo_MEDIUM_II.otf);
+    font-weight: bolder;
+}
+/* styling the description on the home page */
+#note-el{
+    font-family: myThirdFont;
+    position: absolute;
+    float: left;
+    top: 60%;
+    left: 3.5%;
+    line-height: 35px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    
+}
+
+#specific-el,.sub,.try{
+    letter-spacing: 2px;
+    font-size: 17px;
+    font-family: myFirstFont;
+    line-height: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.try{
+    padding-top: 8px;
+    font-size: 18px;
+}
+
+/* services section */
+#services-el{
+    animation: page 3s 1;
+    padding: 5px;
+    color: white;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("./images/services.jpg");
+    background-size: cover;
+    text-align: center;
+    position: relative;
+    z-index: -100;
+    justify-content: center;
+    border: 2px solid black;
+}
+#services-el h4{
+    font-size: 1.6rem;
+    text-align: center;
+    font-family: myFourthFont;
+    letter-spacing: 3px;
+}
+
+/* For about section */
+#about{
+    font-family: mySecondfont;
+    width: 100%;
+    color: #fff;
+    min-height: 180vh;
+    text-align: justify;
+    padding: 8px;    
+    line-height: 25px;
+    background: Linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url("./images/contact_bg.jpg");
+    background-size: cover;
+    background-position: center;
+   
+}
+
+#about p{
+    padding: 3px 5px;
+}
+
+#about h4{
+    font-family: myFirstfont;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+/* contact section */
+#contact{
+    color: #fff;
+    position: relative;
+    width: 100%;
+    height: 250vh;
+    background: #ff4069;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+}
+
+#contact h5{
+    font-family: myFourthFont;
+    text-align: center;
+    font-size: 1.9rem;
+    letter-spacing: 3px;
+}
+#contact p{
+    font-family: myFirstFont;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 5px;
+    
+}
+#contact .form-el{
+    margin-top: 60px;
+    width: 300px;
+    padding: 40px;
+    border-radius: 10px;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;    
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    padding-bottom: 60px;
+}
+.form-el input[type="text"], .form-el input[type="email"]
+{
+    position: relative;
+    border: 0;
+    background: none;
+    display: block;
+    margin: auto;
+    color: white;
+    text-align: center;
+    border: 3px solid #006bfd;
+    padding: 15px 0px;
+    border-radius: 24px;
+    outline: none;
+    transition: 0.25px;
+    
+}.form-el input[type="email"]{
+    background: none;
+}
+.form-el input[type="text"]:focus,.form-el input[type="email"]:focus{
+    transform: translate(-10%, 0%);
+    position: relative;    
+    width: 280px;
+    border-color: #ffc400ec;
+}
+
+.form-el textarea{
+    padding: 5px 8px 50px 10px;
+    color: #fff;
+    background: none;
+    border-radius: 15px;
+}
+
+#form{
+    padding-top: 250px;
+  
+}
+
+/* submit button */
+#submit{
+    margin-top: 20px;
+    padding: 15px 60px;
+    border-radius: 25px;
+    color: #fff;
+    background: transparent;
+    transition: 0.1s ease;
+}
+#submit:hover{
+    color: #000;
+    font-weight: bolder;
+    transform: scale(0.8);
+    background: #dfffd5;
+    cursor: pointer;
+}
+
+.whatsapp{
+    text-align: center;
+    padding-top: 30px;
+    font-family: mySecondfont;
+}
+.whatsapp img{
+    position: absolute;
+    right: 20%;
+    top: 75%;
+    padding-top: 45px;   
+}
+/* For best adaption to all screen sizes */
+
+@media screen and (max-width: 768px){
+   /* the scroll function */
+header.sticky{
+    padding: 40px 500px;
+    background: #000;
+    z-index: 10000;    
+}
+
+header.sticky ul{    
+    z-index: 10000;
+}
+/* ends here */
+
+    header{
+        position: fixed;
+    }
+    #home-el{
+    background-position: 90px 0px;
+    }
+    
+    header ul li{    
+    padding-right: 20px;
+    transition: .3s ease;
+    }
+   
+    nav{
+    position: absolute;
+    justify-content: left;
+    display: none;
+    z-index: 10000;
+    }
+    
+    nav ul{
+        display: grid;
+        position: absolute;
+        text-align: left;
+        left: -50%;
+        top: -1000%;
+        padding: 30px 0px 30px 0px;
+        
+        background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+        margin-top: 40px;        
+    }
+    
+    header ul li:hover{
+    background-color: #ff4069;
+    border-radius: 0%;
+    }
+    
+    header ul li {
+    padding:9px 120px 5px 20px;   
+    margin-bottom: 5px;
+    }
+   /* Menu label */
+    header label{
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        padding-left:  70%;
+        padding-top: 13px;    
+        left: 10%;          
+    }
+    /* Once menu us checked */
+    #menu-el:checked~nav{
+        display: initial;
+        animation: reveal 1s 1;
+    }
+    /* animations for the smooth nav reveal */
+    @keyframes reveal {
+        0%{
+            transform: translateX(-100px);
+        }
+        100%{
+        transform: translateX(0px);            
+        }        
+    }
+  
+}
+
+@media screen and (max-width: 
+437px){
+    #home-el{
+    background-position: left center;
+    }
+    
+}
+@media screen and (min-width: 1000px){
+    img{
+    width: 280px;
+    position: fixed;
+    bottom: 3px;
+    right: 1.0%;
+    z-index: 10000;
+}
+
+    header ul li:hover{
+    background-color: #ff4069;
+    border-radius: 25px;
+}
+
+    header{
+   
+    font-size: 1.4rem;
+    }
+    
+    p{
+    font-size: 1.5rem; 
+    }
+    
+    nav{
+        padding-right: 10%;
+       
+    }
+    nav ul{
+        display: inline-block;
+        padding-top: 10px;
+        margin-right: -40px;
+        padding-right: -60px;
+        position: fixed;
+        top: 10%;
+        right: 20%;
+   }
+   nav ul li{       
+       padding: 10px 10px;
+   }    
+    
+    header.sticky ul{
+        background: #000;
+        transition: 0.2s;
+        padding-left: 80px; 
+        padding-right: 20px;    
+        top: 0%;
+        right: 3%;     
+        z-index: 100; 
+        text-align: center;
+        padding-bottom: 5px;
+    }
+
+   header.sticky h3{
+        font-size: 1.8em;
+        background: #000;
+        transition: 0.3s;
+        padding: 5px 50px 4.5px 20px;        
+        top: 0%;
+        left: 0%;
+        width: 50%;
+        z-index: 100;
+    }
+    
+    header.sticky ul li a:hover{
+        background: #ff4069;
+        transition: .3s;
+        border-radius: 0%;
+    }    
+    
+}
+@media screen and (min-width: 
+2400px){
+     header.sticky ul{
+        background: #000;
+        transition: 0.2s;
+        padding-left: 80px; 
+        padding-right: 20px;    
+        top: 0%;
+        right: 3%;     
+        z-index: 100; 
+        text-align: center;
+        padding-bottom: 5px;
+        width: 50%;
+    }
+
+   header.sticky h3{
+        font-size: 1.8em;
+        background: #000;
+        transition: 0.3s;
+        padding: 5px 50px 5px 20px;        
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        z-index: 100;
+    }    
+    
+}
